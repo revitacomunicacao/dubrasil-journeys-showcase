@@ -1,11 +1,14 @@
-import { MessageCircle, Phone, Mail } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const FinalCTA = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section id="contato" className="py-20 lg:py-28 bg-primary text-primary-foreground">
-      <div className="container mx-auto px-6">
+    <section ref={ref} id="contato" className="py-20 lg:py-28 bg-primary text-primary-foreground">
+      <div className={`container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">

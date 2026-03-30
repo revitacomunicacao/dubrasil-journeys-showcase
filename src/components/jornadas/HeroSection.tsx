@@ -14,7 +14,7 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-dubrasil-navy/95 via-dubrasil-navy/80 to-dubrasil-navy/50" />
       <div className="relative z-10 container mx-auto px-6 py-20">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl animate-fade-in">
           <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/20 text-secondary text-sm font-medium mb-6 border border-secondary/30">
             DuBrasil Serviços
           </span>
