@@ -51,10 +51,7 @@ const ServicesSection = () => {
                 <service.icon className="w-6 h-6 text-secondary" />
               </div>
               <h3 className="font-heading text-lg font-bold mb-2">{service.title}</h3>
-              <p className="text-primary-foreground/70 text-sm leading-relaxed mb-4">{service.desc}</p>
-              <a href="#contato" className="inline-flex items-center text-secondary text-sm font-medium gap-1 group-hover:gap-2 transition-all">
-                Saiba mais <ArrowRight className="w-4 h-4" />
-              </a>
+              <p className="text-primary-foreground/70 text-sm leading-relaxed">{service.desc}</p>
             </div>
           ))}
         </div>
