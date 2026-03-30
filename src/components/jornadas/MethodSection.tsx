@@ -1,4 +1,5 @@
 import { Search, PenTool, Rocket, BarChart3 } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const steps = [
   { icon: Search, title: "Diagnóstico", desc: "Mapeamos processos, sistemas e gaps para entender sua realidade operacional." },
@@ -8,9 +9,11 @@ const steps = [
 ];
 
 const MethodSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section className="py-20 lg:py-28 bg-muted/50">
-      <div className="container mx-auto px-6">
+    <section ref={ref} className="py-20 lg:py-28 bg-muted/50">
+      <div className={`container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
             Método DuBrasil
@@ -20,7 +23,6 @@ const MethodSection = () => {
           </h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-          {/* Connecting line */}
           <div className="hidden lg:block absolute top-[52px] left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-secondary/30 via-secondary to-secondary/30" />
           {steps.map((step, i) => (
             <div key={i} className="relative text-center">

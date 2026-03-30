@@ -1,4 +1,5 @@
 import { Quote } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const testimonials = [
   {
@@ -22,9 +23,11 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section className="py-20 lg:py-28">
-      <div className="container mx-auto px-6">
+    <section ref={ref} className="py-20 lg:py-28">
+      <div className={`container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
             Quem confia na DuBrasil

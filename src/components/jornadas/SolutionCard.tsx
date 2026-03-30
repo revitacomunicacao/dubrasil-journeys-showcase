@@ -1,5 +1,6 @@
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 interface SolutionCardProps {
   title: string;
@@ -8,7 +9,6 @@ interface SolutionCardProps {
   image: string;
   ctaText?: string;
   ctaLink?: string;
-  reversed?: boolean;
 }
 
 const SolutionCard = ({
@@ -19,8 +19,10 @@ const SolutionCard = ({
   ctaText = "Quero saber mais",
   ctaLink = "#contato",
 }: SolutionCardProps) => {
+  const { ref, isVisible } = useScrollAnimation(0.1);
+
   return (
-    <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section ref={ref} className="relative min-h-[600px] flex items-center justify-center overflow-hidden w-full">
       <img
         src={image}
         alt={title}
@@ -28,7 +30,7 @@ const SolutionCard = ({
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-dubrasil-navy/75" />
-      <div className="relative z-10 container mx-auto px-6 py-16 text-center max-w-3xl">
+      <div className={`relative z-10 w-full px-6 py-16 text-center max-w-3xl mx-auto transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <h3 className="font-heading text-3xl lg:text-4xl font-bold text-white mb-4">
           {title}
         </h3>

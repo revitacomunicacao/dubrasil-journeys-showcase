@@ -1,4 +1,5 @@
 import { Shield, Clock, FileCheck, TrendingUp } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const benefits = [
   { icon: Shield, title: "Segurança Jurídica", desc: "Conformidade com CLT, portarias MTE e convenções coletivas" },
@@ -8,9 +9,11 @@ const benefits = [
 ];
 
 const PainSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section className="py-20 lg:py-28 bg-muted/50">
-      <div className="container mx-auto px-6">
+    <section ref={ref} className="py-20 lg:py-28 bg-muted/50">
+      <div className={`container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
             Menos risco. Menos ajuste.{" "}
@@ -27,6 +30,7 @@ const PainSection = () => {
             <div
               key={i}
               className="bg-card rounded-xl p-6 shadow-md border border-border hover:shadow-lg transition-shadow group"
+              style={{ transitionDelay: `${i * 100}ms` }}
             >
               <div className="w-14 h-14 rounded-lg bg-secondary/10 flex items-center justify-center mb-5 group-hover:bg-secondary/20 transition-colors">
                 <item.icon className="w-7 h-7 text-secondary" />
