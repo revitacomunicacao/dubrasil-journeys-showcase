@@ -1,4 +1,4 @@
-import { ClipboardCheck, Headphones, Calculator, Settings, Monitor, ArrowRight } from "lucide-react";
+import { ClipboardCheck, Headphones, Calculator, Settings, Monitor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const services = [
