@@ -1,4 +1,4 @@
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-jornadas.jpg";
 
@@ -27,14 +27,8 @@ const HeroSection = () => {
             controle de acesso e identificação corporativa — com foco em conformidade legal e eficiência operacional.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-6">
-            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2 text-base px-8">
-                <MessageCircle className="w-5 h-5" />
-                Quero um diagnóstico agora
-              </Button>
-            </a>
             <a href="#solucoes">
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 gap-2 text-base">
+              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2 text-base px-8">
                 Quero ser direcionado para a solução certa
                 <ArrowRight className="w-5 h-5" />
               </Button>
