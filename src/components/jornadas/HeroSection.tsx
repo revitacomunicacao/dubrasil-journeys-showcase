@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-jornadas.jpg";
+import heroImage from "@/assets/fullbanner JORNADAS.jpg.jpeg";
 
 const HeroSection = () => {
   return (
@@ -12,12 +12,8 @@ const HeroSection = () => {
         height={1080}
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-dubrasil-navy/95 via-dubrasil-navy/80 to-dubrasil-navy/50" />
-      <div className="relative z-10 container mx-auto px-6 py-20">
+      <div className="relative z-10 container mx-auto px-6 pt-28 md:pt-32 pb-20">
         <div className="max-w-2xl animate-fade-in">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/20 text-secondary text-sm font-medium mb-6 border border-secondary/30">
-            DuBrasil Serviços
-          </span>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Jornadas, Acessos e Identificação com{" "}
             <span className="text-secondary">Segurança Jurídica</span>
@@ -27,7 +23,7 @@ const HeroSection = () => {
             controle de acesso e identificação corporativa — com foco em conformidade legal e eficiência operacional.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-6">
-            <a href="#solucoes">
+            <a href="#contato">
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2 text-base px-8">
                 Quero ser direcionado para a solução certa
                 <ArrowRight className="w-5 h-5" />

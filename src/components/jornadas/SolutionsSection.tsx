@@ -1,9 +1,8 @@
 import SolutionCard from "./SolutionCard";
-import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import solucaoPonto from "@/assets/solucao-ponto.jpg";
-import solucaoAgro from "@/assets/solucao-agro.jpg";
-import solucaoAcesso from "@/assets/solucao-acesso.jpg";
-import solucaoIdentificacao from "@/assets/solucao-identificacao.jpg";
+import solucaoPonto from "@/assets/ponto.jpeg";
+import solucaoAgro from "@/assets/agro.jpeg";
+import solucaoAcesso from "@/assets/controle.jpeg";
+import solucaoIdentificacao from "@/assets/identificacao.png";
 
 const solutions = [
   {
@@ -57,24 +56,15 @@ const solutions = [
 ];
 
 const SolutionsSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
-
   return (
-    <section id="solucoes">
-      <div
-        ref={ref}
-        className={`text-center max-w-3xl mx-auto py-16 px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-      >
-        <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
-          Nossas Soluções
-        </span>
-        <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-          Soluções completas para cada necessidade
-        </h2>
-      </div>
+    <section aria-labelledby="solucoes-heading">
       <div>
         {solutions.map((solution, i) => (
-          <SolutionCard key={i} {...solution} />
+          <SolutionCard
+            key={i}
+            {...solution}
+            align={i % 2 === 0 ? "right" : "left"}
+          />
         ))}
       </div>
     </section>

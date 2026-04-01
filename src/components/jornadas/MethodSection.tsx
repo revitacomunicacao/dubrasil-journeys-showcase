@@ -1,5 +1,6 @@
 import { Search, PenTool, Rocket, BarChart3 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import bgImage from "@/assets/background-como-apresentamos.jpeg";
 
 const steps = [
   { icon: Search, title: "Diagnóstico", desc: "Mapeamos processos, sistemas e gaps para entender sua realidade operacional." },
@@ -12,10 +13,22 @@ const MethodSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="py-20 lg:py-28 bg-muted/50">
-      <div className={`container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+    <section
+      ref={ref}
+      id="metodo"
+      className="relative py-20 lg:py-28 overflow-hidden scroll-mt-28"
+    >
+      <img
+        src={bgImage}
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-black/30" />
+      <div className={`relative z-10 container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-white text-sm font-medium mb-4">
             Método DuBrasil
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
@@ -33,7 +46,7 @@ const MethodSection = () => {
                 Etapa {i + 1}
               </span>
               <h3 className="font-heading text-xl font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{step.desc}</p>
+              <p className="text-white text-sm leading-relaxed">{step.desc}</p>
             </div>
           ))}
         </div>
