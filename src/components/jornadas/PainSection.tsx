@@ -67,7 +67,7 @@ const PainSection = () => {
 
         {/* Solutions heading moved here to keep the same background */}
         <div id="solucoes" className="mt-20 text-center max-w-3xl mx-auto scroll-mt-28">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-2xl font-medium mb-4">
             Nossas Soluções
           </span>
           <h2

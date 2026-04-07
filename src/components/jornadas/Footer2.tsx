@@ -41,7 +41,7 @@ const Footer = () => {
   const { ref, inView } = useInView<HTMLElement>({ threshold: 0.2, once: true })
 
   return (
-    <footer ref={ref} className="bg-dubrasil-light text-dubrasil-navy">
+    <footer ref={ref} className="bg-[#b8b8b8] text-dubrasil-navy">
       {/* Top */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-8">
