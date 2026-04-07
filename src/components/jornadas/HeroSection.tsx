@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/fullbanner JORNADAS.jpg.jpeg";
+import heroImage from "@/assets/background hero.jpeg";
 
 const HeroSection = () => {
   return (
@@ -20,7 +20,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-lg text-white/80 leading-relaxed mb-8 max-w-xl">
             Implantamos, configuramos e operamos sistemas de controle de ponto, gestão de jornadas, 
-            controle de acesso e identificação corporativa — com foco em conformidade legal e eficiência operacional.
+            controle de acesso e identificação corporativa, com foco em conformidade legal e eficiência operacional.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-6">
             <a href="#contato">

@@ -30,7 +30,7 @@ const services = [
   {
     icon: Settings,
     title: "BPO de Fechamento",
-    desc: "Terceirização completa do fechamento de ponto — da coleta ao envio para folha de pagamento.",
+    desc: "Terceirização completa do fechamento de ponto, da coleta ao envio para folha de pagamento.",
   },
   {
     icon: Monitor,

@@ -1,4 +1,4 @@
-# DuBrasil Jornadas — Página de Soluções
+# DuBrasil Jornadas: Página de Soluções
 
 ## Visão Geral
 
@@ -20,14 +20,14 @@ Página corporativa moderna e rica em imagens para a DuBrasil Serviços, focada 
 - Texto explicativo sobre processo e padronização
 - Layout com ícones/ilustrações representando os benefícios
 
-### 3. Seção "Nossas Soluções" — 4 Cards com Imagem de Fundo
+### 3. Seção "Nossas Soluções": 4 Cards com Imagem de Fundo
 
 Cada solução é um componente independente com imagem de fundo (Unsplash), overlay, título, texto, benefícios e CTA:
 
-- **Controle de Ponto** — imagem: escritório/DP com telas e relatórios
-- **Gestão de Jornadas no Agro** — imagem: campo/lavoura/galpão agrícola
-- **Controle de Acesso** — imagem: catraca/portaria corporativa
-- **Identificação Corporativa** — imagem: crachás/equipe profissional
+- **Controle de Ponto**: imagem: escritório/DP com telas e relatórios
+- **Gestão de Jornadas no Agro**: imagem: campo/lavoura/galpão agrícola
+- **Controle de Acesso**: imagem: catraca/portaria corporativa
+- **Identificação Corporativa**: imagem: crachás/equipe profissional
 
 Cada card mostra: título, texto, lista de benefícios com ícones e botão CTA verde-azulado
 

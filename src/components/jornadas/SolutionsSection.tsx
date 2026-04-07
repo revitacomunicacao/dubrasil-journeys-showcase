@@ -2,7 +2,7 @@ import SolutionCard from "./SolutionCard";
 import solucaoPonto from "@/assets/ponto.jpeg";
 import solucaoAgro from "@/assets/agro.jpeg";
 import solucaoAcesso from "@/assets/controle.jpeg";
-import solucaoIdentificacao from "@/assets/identificacao.png";
+import solucaoIdentificacao from "@/assets/identificacao corporativa.jpeg";
 
 const solutions = [
   {
@@ -32,7 +32,7 @@ const solutions = [
   {
     title: "Controle de Acesso",
     description:
-      "Projeto, implantação e operação de sistemas de controle de acesso físico — catracas, cancelas, leitores biométricos e integração com ponto.",
+      "Projeto, implantação e operação de sistemas de controle de acesso físico: catracas, cancelas, leitores biométricos e integração com ponto.",
     benefits: [
       "Projeto de fluxo de acesso e segurança patrimonial",
       "Catracas, cancelas e leitores biométricos",
@@ -44,7 +44,7 @@ const solutions = [
   {
     title: "Identificação Corporativa",
     description:
-      "Produção e gestão de crachás corporativos com tecnologia embarcada — proximidade, código de barras, QR Code — integrados aos sistemas de ponto e acesso.",
+      "Produção e gestão de crachás corporativos com tecnologia embarcada (proximidade, código de barras, QR Code), integrados aos sistemas de ponto e acesso.",
     benefits: [
       "Crachás com tecnologia de proximidade e QR Code",
       "Layout personalizado com identidade da empresa",

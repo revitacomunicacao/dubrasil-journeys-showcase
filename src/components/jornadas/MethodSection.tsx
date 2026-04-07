@@ -5,7 +5,7 @@ import bgImage from "@/assets/background-como-apresentamos.jpeg";
 const steps = [
   { icon: Search, title: "Diagnóstico", desc: "Mapeamos processos, sistemas e gaps para entender sua realidade operacional." },
   { icon: PenTool, title: "Desenho", desc: "Projetamos a solução ideal com regras, fluxos e integrações sob medida." },
-  { icon: Rocket, title: "Implantação", desc: "Configuramos, testamos e treinamos — com acompanhamento em cada etapa." },
+  { icon: Rocket, title: "Implantação", desc: "Configuramos, testamos e treinamos, com acompanhamento em cada etapa." },
   { icon: BarChart3, title: "Acompanhamento", desc: "Monitoramos indicadores e ajustamos continuamente para manter a excelência." },
 ];
 
