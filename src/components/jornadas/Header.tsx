@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-dubrasil-servicos.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const scrollToSection = (id: string) => {
@@ -21,7 +21,7 @@ const Header = () => {
           <img
             src={logo}
             alt="DuBrasil Soluções"
-            className="h-10 md:h-12 w-auto"
+            className=""
           />{" "}
         </div>{" "}
         {/* Desktop Navigation */}{" "}
@@ -46,7 +46,7 @@ const Header = () => {
           </button>
           <Button
             onClick={() => scrollToSection("contato")}
-            className="bg-[#094385] hover:bg-[#094385]/90 text-white"
+            className="bg-[#094385] hover:bg-[#094385]/90 text-white text-base"
           >
             Transforme o seu negócio
           </Button>
@@ -85,7 +85,7 @@ const Header = () => {
             </button>
             <Button
               onClick={() => scrollToSection("contato")}
-              className="bg-[#094385] hover:bg-[#094385]/90 text-white w-full"
+              className="bg-[#094385] hover:bg-[#094385]/90 text-white text-base w-full"
             >
               Transforme o seu negócio
             </Button>
