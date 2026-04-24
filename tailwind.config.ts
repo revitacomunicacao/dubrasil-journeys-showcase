@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Ubuntu", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        heading: ["Roboto", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
