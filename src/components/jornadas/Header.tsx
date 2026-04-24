@@ -25,7 +25,7 @@ const Header = () => {
           />{" "}
         </div>{" "}
         {/* Desktop Navigation */}{" "}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex flex-1 items-center justify-center gap-8">
           <button
             onClick={() => scrollToSection("solucoes")}
             className="text-[#094385]/90 hover:text-[#094385] transition-colors font-medium"
@@ -44,13 +44,15 @@ const Header = () => {
           >
             Método DuBrasil
           </button>
+        </nav>
+        <div className="hidden md:flex items-center">
           <Button
             onClick={() => scrollToSection("contato")}
             className="bg-[#094385] hover:bg-[#094385]/90 text-white text-base"
           >
             Transforme o seu negócio
           </Button>
-        </nav>
+        </div>
         {/* Mobile Menu Button */}{" "}
         <button
           className="md:hidden text-[#094385]"
