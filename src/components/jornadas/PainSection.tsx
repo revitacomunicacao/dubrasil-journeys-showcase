@@ -36,7 +36,7 @@ const PainSection = () => {
               <ShieldCheck className="h-5 w-5 text-primary" />
               <p className="font-semibold">Conformidade e evidências</p>
             </div>
-            <p className="mt-3 text-sm text-muted-foreground">
+            <p className="mt-3 text-xl text-muted-foreground">
               Padronização de regras e rastreabilidade para auditorias,
               fiscalizações e governança interna.
             </p>
@@ -47,7 +47,7 @@ const PainSection = () => {
               <ClipboardCheck className="h-5 w-5 text-primary" />
               <p className="font-semibold">Rotina que fecha</p>
             </div>
-            <p className="mt-3 text-sm text-muted-foreground">
+            <p className="mt-3 text-xl text-muted-foreground">
               Menos retrabalho e menos ajuste manual com checklist, processo e
               acompanhamento nos ciclos críticos.
             </p>
@@ -58,7 +58,7 @@ const PainSection = () => {
               <Fingerprint className="h-5 w-5 text-primary" />
               <p className="font-semibold">Execução assistida</p>
             </div>
-            <p className="mt-3 text-sm text-muted-foreground">
+            <p className="mt-3 text-xl text-muted-foreground">
               Implantação, configuração e treinamento por perfil para a
               operação rodar com previsibilidade.
             </p>
@@ -67,7 +67,7 @@ const PainSection = () => {
 
         {/* Solutions heading moved here to keep the same background */}
         <div id="solucoes" className="mt-20 text-center max-w-3xl mx-auto scroll-mt-28">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-2xl font-medium mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-[#094385]/10 text-[#094385] text-2xl font-medium mb-4">
             Nossas Soluções
           </span>
           <h2

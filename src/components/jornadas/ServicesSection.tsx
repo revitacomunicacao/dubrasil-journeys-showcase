@@ -88,7 +88,7 @@ const ServicesSection = () => {
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
             Serviços que colocam sua operação no controle
           </h2>
-          <p className="text-primary-foreground/70 text-lg">
+          <p className="text-primary-foreground/70 text-xl">
             Serviços recorrentes e projetos sob medida para manter sua operação funcionando com precisão.
           </p>
         </div>
@@ -105,14 +105,14 @@ const ServicesSection = () => {
               >
                 <div className="bg-white/90 backdrop-blur-sm border border-white/30 rounded-xl p-6 hover:bg-white/80 transition-colors group shadow-sm h-full">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center shrink-0">
-                      <service.icon className="w-6 h-6 text-secondary" />
+                    <div className="w-12 h-12 rounded-lg bg-[#094385]/15 flex items-center justify-center shrink-0">
+                      <service.icon className="w-6 h-6 text-[#094385]" />
                     </div>
-                    <h3 className="font-heading text-lg font-bold text-dubrasil-navy leading-tight">
+                    <h3 className="font-heading text-xl font-bold text-dubrasil-navy leading-tight">
                       {service.title}
                     </h3>
                   </div>
-                  <p className="text-dubrasil-navy/70 text-sm leading-relaxed">
+                  <p className="text-dubrasil-navy/70 text-xl leading-relaxed">
                     {service.desc}
                   </p>
                 </div>

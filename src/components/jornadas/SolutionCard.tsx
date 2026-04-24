@@ -55,20 +55,20 @@ const SolutionCard = ({
                   <h3 className="font-heading text-3xl lg:text-4xl font-bold text-white mb-4">
                     {title}
                   </h3>
-                  <p className="text-white/80 leading-relaxed mb-8 text-lg">
+                  <p className="text-white/80 leading-relaxed mb-8 text-xl">
                     {description}
                   </p>
                   <ul className="space-y-3 mb-8 text-left">
                     {benefits.map((benefit, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
-                        <span className="text-white/90 text-sm">{benefit}</span>
+                        <CheckCircle className="w-5 h-5 text-[#094385] shrink-0 mt-0.5" />
+                        <span className="text-white/90 text-xl">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                   <div>
                     <a href={ctaLink}>
-                      <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
+                      <Button className="bg-[#094385] text-white hover:bg-[#094385]/90 gap-2 text-xl">
                         {ctaText}
                         <ArrowRight className="w-4 h-4" />
                       </Button>

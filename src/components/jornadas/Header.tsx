@@ -28,32 +28,32 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-8">
           <button
             onClick={() => scrollToSection("solucoes")}
-            className="text-dubrasil-navy/90 hover:text-dubrasil-navy transition-colors font-medium"
+            className="text-[#094385]/90 hover:text-[#094385] transition-colors font-medium"
           >
             Soluções
           </button>
           <button
             onClick={() => scrollToSection("servicos")}
-            className="text-dubrasil-navy/90 hover:text-dubrasil-navy transition-colors font-medium"
+            className="text-[#094385]/90 hover:text-[#094385] transition-colors font-medium"
           >
             Serviços recorrentes
           </button>
           <button
             onClick={() => scrollToSection("metodo")}
-            className="text-dubrasil-navy/90 hover:text-dubrasil-navy transition-colors font-medium"
+            className="text-[#094385]/90 hover:text-[#094385] transition-colors font-medium"
           >
             Método DuBrasil
           </button>
           <Button
             onClick={() => scrollToSection("contato")}
-            className="bg-accent hover:bg-accent/90 text-accent-foreground"
+            className="bg-[#094385] hover:bg-[#094385]/90 text-white"
           >
             Transforme o seu negócio
           </Button>
         </nav>
         {/* Mobile Menu Button */}{" "}
         <button
-          className="md:hidden text-dubrasil-navy"
+          className="md:hidden text-[#094385]"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {" "}
@@ -67,25 +67,25 @@ const Header = () => {
           <div className="container mx-auto px-4 flex flex-col gap-4">
             <button
               onClick={() => scrollToSection("solucoes")}
-              className="text-dubrasil-navy/90 hover:text-dubrasil-navy transition-colors font-medium"
+              className="text-[#094385]/90 hover:text-[#094385] transition-colors font-medium"
             >
               Soluções
             </button>
             <button
               onClick={() => scrollToSection("servicos")}
-              className="text-dubrasil-navy/90 hover:text-dubrasil-navy transition-colors font-medium"
+              className="text-[#094385]/90 hover:text-[#094385] transition-colors font-medium"
             >
               Serviços recorrentes
             </button>
             <button
               onClick={() => scrollToSection("metodo")}
-              className="text-dubrasil-navy/90 hover:text-dubrasil-navy transition-colors font-medium"
+              className="text-[#094385]/90 hover:text-[#094385] transition-colors font-medium"
             >
               Método DuBrasil
             </button>
             <Button
               onClick={() => scrollToSection("contato")}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground w-full"
+              className="bg-[#094385] hover:bg-[#094385]/90 text-white w-full"
             >
               Transforme o seu negócio
             </Button>

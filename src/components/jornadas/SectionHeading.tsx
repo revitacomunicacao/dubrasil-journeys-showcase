@@ -10,7 +10,7 @@ const SectionHeading = ({ eyebrow, title, description }: SectionHeadingProps) =>
   return (
     <div className="text-center max-w-3xl mx-auto">
       {eyebrow ? (
-        <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
+        <span className="inline-block px-4 py-1.5 rounded-full bg-[#094385]/10 text-[#094385] text-xl font-medium mb-4">
           {eyebrow}
         </span>
       ) : null}
@@ -25,7 +25,7 @@ const SectionHeading = ({ eyebrow, title, description }: SectionHeadingProps) =>
       </h2>
 
       {description ? (
-        <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
+        <p className="mt-4 text-muted-foreground text-xl leading-relaxed">
           {description}
         </p>
       ) : null}
