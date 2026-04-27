@@ -1,7 +1,7 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { ClipboardCheck, Fingerprint, ShieldCheck } from "lucide-react";
 import SectionHeading from "@/components/jornadas/SectionHeading";
-import bgDiferenciais from "@/assets/background - Menos risco Menos ajuste Mais rotina e controle.jpg.jpeg";
+import bgDiferenciais from "@/assets/bgMenosRisco.jpeg";
 
 const PainSection = () => {
   const { ref, isVisible } = useScrollAnimation();

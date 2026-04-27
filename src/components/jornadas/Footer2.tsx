@@ -42,6 +42,7 @@ const Footer = () => {
 
   return (
     <footer ref={ref} className="bg-[#b8b8b8] text-dubrasil-navy">
+      <div className="h-1 w-full bg-[#094385]" aria-hidden="true" />
       {/* Top */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-8">
@@ -67,7 +68,7 @@ const Footer = () => {
                 : "opacity-0 translate-y-3",
             ].join(" ")}
           >
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider">
+            <p className="text-accent font-semibold text-base uppercase tracking-wider">
               Contato
             </p>
 
@@ -96,7 +97,7 @@ const Footer = () => {
                 : "opacity-0 translate-y-3",
             ].join(" ")}
           >
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider">
+            <p className="text-accent font-semibold text-base uppercase tracking-wider">
               Endereço
             </p>
 
@@ -117,7 +118,7 @@ const Footer = () => {
                 : "opacity-0 translate-y-3",
             ].join(" ")}
           >
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider">
+            <p className="text-accent font-semibold text-base uppercase tracking-wider">
               Redes sociais
             </p>
 
@@ -167,7 +168,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom */}
-      <div className="border-t border-dubrasil-navy/10">
+      <div className="border-t border-[#094385]/20">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col gap-2 text-center md:flex-row md:items-center md:justify-between">
             <p className="text-dubrasil-navy/70 text-sm">

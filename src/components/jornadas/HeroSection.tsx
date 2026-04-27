@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/background hero.jpeg";
+import heroImage from "@/assets/fullbanner JORNADAS-DBS.jpeg";
 
 const HeroSection = () => {
   return (
