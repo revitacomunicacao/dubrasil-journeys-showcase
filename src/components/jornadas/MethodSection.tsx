@@ -1,12 +1,15 @@
-import { Search, PenTool, Rocket, BarChart3 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import bgImage from "@/assets/background-como-apresentamos.jpeg";
+import iconDiagnostico from "@/assets/diagnostico.png";
+import iconPlanejamento from "@/assets/planejamento.png";
+import iconImplantacao from "@/assets/implantação.png";
+import iconAcompanhamento from "@/assets/aompanhamento.png";
 
 const steps = [
-  { icon: Search, title: "Diagnóstico", desc: "Mapeamos processos, sistemas e gaps para entender sua realidade operacional." },
-  { icon: PenTool, title: "Planejamento", desc: "Projetamos a solução ideal com regras, fluxos e integrações sob medida." },
-  { icon: Rocket, title: "Implantação", desc: "Configuramos, testamos e treinamos, com acompanhamento em cada etapa." },
-  { icon: BarChart3, title: "Acompanhamento", desc: "Monitoramos indicadores e ajustamos continuamente para manter a excelência." },
+  { iconSrc: iconDiagnostico, title: "Diagnóstico", desc: "Mapeamos processos, sistemas e gaps para entender sua realidade operacional." },
+  { iconSrc: iconPlanejamento, title: "Planejamento", desc: "Projetamos a solução ideal com regras, fluxos e integrações sob medida." },
+  { iconSrc: iconImplantacao, title: "Implantação", desc: "Configuramos, testamos e treinamos, com acompanhamento em cada etapa." },
+  { iconSrc: iconAcompanhamento, title: "Acompanhamento", desc: "Monitoramos indicadores e ajustamos continuamente para manter a excelência." },
 ];
 
 const MethodSection = () => {
@@ -41,7 +44,13 @@ const MethodSection = () => {
           {steps.map((step, i) => (
             <div key={i} className="relative text-center">
               <div className="w-[104px] h-[104px] rounded-full bg-foreground/90 border-4 border-[#094385]/30 flex items-center justify-center mx-auto mb-6 relative z-10">
-                <step.icon className="w-12 h-12 text-white" />
+                <img
+                  src={step.iconSrc}
+                  alt={step.title}
+                  className="w-14 h-14 object-contain"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
               <span className="text-[#094385] font-heading font-bold text-xl mb-2 block drop-shadow-sm">
                 Etapa {i + 1}
