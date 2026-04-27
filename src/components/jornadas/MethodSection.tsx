@@ -2,7 +2,7 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import bgImage from "@/assets/background-como-apresentamos.jpeg";
 import iconDiagnostico from "@/assets/diagnostico.png";
 import iconPlanejamento from "@/assets/planejamento.png";
-import iconImplantacao from "@/assets/implantação.png";
+import iconImplantacao from "@/assets/implantacao.png";
 import iconAcompanhamento from "@/assets/aompanhamento.png";
 
 const steps = [

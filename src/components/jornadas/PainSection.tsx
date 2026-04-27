@@ -3,7 +3,7 @@ import SectionHeading from "@/components/jornadas/SectionHeading";
 import bgDiferenciais from "@/assets/bgMenosRisco.jpeg";
 import iconConformidade from "@/assets/conformidade.png";
 import iconRotina from "@/assets/Rotina.png";
-import iconExecucao from "@/assets/execução.png";
+import iconExecucao from "@/assets/execucao.png";
 
 const PainSection = () => {
   const { ref, isVisible } = useScrollAnimation();
