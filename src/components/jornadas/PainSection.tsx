@@ -1,7 +1,9 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import { ClipboardCheck, Fingerprint, ShieldCheck } from "lucide-react";
 import SectionHeading from "@/components/jornadas/SectionHeading";
 import bgDiferenciais from "@/assets/bgMenosRisco.jpeg";
+import iconConformidade from "@/assets/conformidade.png";
+import iconRotina from "@/assets/Rotina.png";
+import iconExecucao from "@/assets/execução.png";
 
 const PainSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -33,7 +35,14 @@ const PainSection = () => {
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           <div className="rounded-3xl border bg-card p-7">
             <div className="flex items-center gap-3">
-              <ShieldCheck className="h-5 w-5 text-primary" />
+              <img
+                src={iconConformidade}
+                alt=""
+                aria-hidden="true"
+                className="h-14 w-14 object-contain"
+                loading="lazy"
+                decoding="async"
+              />
               <p className="font-semibold">Conformidade e evidências</p>
             </div>
             <p className="mt-3 text-xl text-muted-foreground">
@@ -44,7 +53,14 @@ const PainSection = () => {
 
           <div className="rounded-3xl border bg-card p-7">
             <div className="flex items-center gap-3">
-              <ClipboardCheck className="h-5 w-5 text-primary" />
+              <img
+                src={iconRotina}
+                alt=""
+                aria-hidden="true"
+                className="h-14 w-14 object-contain"
+                loading="lazy"
+                decoding="async"
+              />
               <p className="font-semibold">Rotina que fecha</p>
             </div>
             <p className="mt-3 text-xl text-muted-foreground">
@@ -55,7 +71,14 @@ const PainSection = () => {
 
           <div className="rounded-3xl border bg-card p-7">
             <div className="flex items-center gap-3">
-              <Fingerprint className="h-5 w-5 text-primary" />
+              <img
+                src={iconExecucao}
+                alt=""
+                aria-hidden="true"
+                className="h-14 w-14 object-contain"
+                loading="lazy"
+                decoding="async"
+              />
               <p className="font-semibold">Execução assistida</p>
             </div>
             <p className="mt-3 text-xl text-muted-foreground">
