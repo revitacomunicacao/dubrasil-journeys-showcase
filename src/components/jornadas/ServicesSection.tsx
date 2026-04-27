@@ -73,7 +73,7 @@ const ServicesSection = () => {
     <section
       ref={ref}
       id="servicos"
-      className="relative py-20 lg:py-28 overflow-hidden text-primary-foreground scroll-mt-28"
+      className="relative py-20 lg:py-28 lg:min-h-[850px] lg:flex lg:items-center overflow-hidden text-primary-foreground scroll-mt-28"
     >
       <img
         src={bgSuporte}
@@ -83,10 +83,10 @@ const ServicesSection = () => {
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-primary/65" />
-      <div className={`relative z-10 container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+      <div className={`relative z-10 w-full container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-            Serviços que colocam sua operação no controle
+            Serviços que colocam sua<br /> operação no controle
           </h2>
           <p className="text-primary-foreground/70 text-xl">
             Serviços recorrentes e projetos sob medida para manter sua operação funcionando com precisão.

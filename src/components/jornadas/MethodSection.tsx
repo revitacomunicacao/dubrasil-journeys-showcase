@@ -16,7 +16,7 @@ const MethodSection = () => {
     <section
       ref={ref}
       id="metodo"
-      className="relative py-20 lg:py-28 overflow-hidden scroll-mt-28"
+      className="relative py-20 lg:py-28 lg:min-h-[850px] lg:flex lg:items-center overflow-hidden scroll-mt-28"
     >
       <img
         src={bgImage}
@@ -26,7 +26,7 @@ const MethodSection = () => {
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0" />
-      <div className={`relative z-10 container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+      <div className={`relative z-10 w-full container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full bg-[#094385]/15 text-[#094385] text-2xl font-medium mb-4 drop-shadow-sm">
             Método DuBrasil

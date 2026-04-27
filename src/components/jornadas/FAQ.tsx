@@ -108,16 +108,16 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section id="faq" className="bg-[#ededed] py-24 sm:py-32">
+    <section id="faq" className="bg-gradient-to-br from-[#094385] to-[#08284e] py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center mb-14">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-4">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/90 mb-4">
             FAQ
           </p>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-white">
             Perguntas frequentes
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-white/75 max-w-2xl mx-auto">
             Respostas rápidas sobre controle de jornada, suporte e conformidade
             para você implementar com segurança.
           </p>
