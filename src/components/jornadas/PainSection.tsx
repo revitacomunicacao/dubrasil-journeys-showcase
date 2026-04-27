@@ -10,7 +10,7 @@ const PainSection = () => {
     <section
       ref={ref}
       id="diferenciais"
-      className="relative overflow-hidden py-20 lg:py-28 text-[#002147]"
+      className="relative overflow-hidden pt-20 pb-0 lg:pt-28 lg:pb-0 text-[#002147]"
     >
       <div
         className="absolute inset-0 bg-center bg-cover"
@@ -66,16 +66,17 @@ const PainSection = () => {
         </div>
 
         {/* Solutions heading moved here to keep the same background */}
-        <div id="solucoes" className="mt-20 text-center max-w-3xl mx-auto scroll-mt-28">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-[#094385]/10 text-[#094385] text-2xl font-medium mb-4">
-            Nossas Soluções
-          </span>
-          <h2
-            id="solucoes-heading"
-            className="font-heading text-3xl md:text-4xl font-bold text-foreground"
-          >
-            Soluções completas para cada necessidade
-          </h2>
+        <div id="solucoes" className="scroll-mt-28 mt-10">
+          <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw] bg-[#08284e] py-12">
+            <div className="container mx-auto px-6 text-center max-w-3xl">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-white text-2xl font-medium mb-4">
+                Nossas Soluções
+              </span>
+              <h2 id="solucoes-heading" className="font-heading text-3xl md:text-4xl font-bold text-white">
+                Soluções completas para cada necessidade
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>
