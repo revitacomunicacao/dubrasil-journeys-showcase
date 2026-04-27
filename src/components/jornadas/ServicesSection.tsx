@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { ClipboardCheck, Headphones, Calculator, Settings, Monitor } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import bgSuporte from "@/assets/bgsuporte.jpeg";
+import iconAuditoria from "@/assets/auditoria.png";
 import iconBpoFechamento from "@/assets/bpo de fechamento.png";
 import iconFechamento from "@/assets/fechamento.png";
+import iconPortalCliente from "@/assets/portal cliente.png";
 import iconSuporte from "@/assets/suporte.png";
 import {
   Carousel,
@@ -18,9 +20,9 @@ type ServiceIcon =
   | { kind: "lucide"; icon: React.ComponentType<{ className?: string }> }
   | { kind: "image"; src: string; alt: string };
 
-const services = [
+const services: Array<{ icon: ServiceIcon; title: string; desc: string }> = [
   {
-    icon: { kind: "lucide", icon: ClipboardCheck } satisfies ServiceIcon,
+    icon: { kind: "image", src: iconAuditoria, alt: "Auditoria" } satisfies ServiceIcon,
     title: "Auditoria Técnica",
     desc: "Revisão completa de processos, parametrizações e conformidade dos sistemas de ponto e acesso.",
   },
@@ -40,7 +42,7 @@ const services = [
     desc: "Terceirização completa do fechamento de ponto, da coleta ao envio para folha de pagamento.",
   },
   {
-    icon: { kind: "lucide", icon: Monitor } satisfies ServiceIcon,
+    icon: { kind: "image", src: iconPortalCliente, alt: "Portal do cliente" } satisfies ServiceIcon,
     title: "Portal do Cliente",
     desc: "Plataforma online para acompanhamento de chamados, relatórios e indicadores em tempo real.",
   },
@@ -117,12 +119,12 @@ const ServicesSection = () => {
                         <img
                           src={service.icon.src}
                           alt={service.icon.alt}
-                          className="h-7 w-7 object-contain"
+                          className="h-9 w-9 object-contain"
                           loading="lazy"
                           decoding="async"
                         />
                       ) : (
-                        <service.icon.icon className="w-7 h-7 text-[#094385]" />
+                        <service.icon.icon className="w-9 h-9 text-[#094385]" />
                       )}
                     </div>
                     <h3 className="font-heading text-xl font-bold text-dubrasil-navy leading-tight">
