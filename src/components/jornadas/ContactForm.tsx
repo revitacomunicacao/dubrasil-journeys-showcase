@@ -8,7 +8,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
 import bgMeshAlt from "@/assets/ilustra-bloco-form.jpeg";
-import logo from "@/assets/logo-dubrasil-servicos.png";
 
 const WHATSAPP_NUMBER = "5534996367430";
 
@@ -100,9 +99,6 @@ const ContactForm = () => {
             {/* Formulário */}
             <div className="lg:col-span-6">
               <div className="rounded-2xl border border-white/15 bg-white/5 backdrop-blur-sm p-6 shadow-card max-md:p-5 md:p-8">
-                <div className="mb-6 flex justify-center lg:justify-start">
-                  <img src={logo} alt="DuBrasil Serviços" className="h-10 w-auto" />
-                </div>
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="mb-2 block text-sm font-medium text-white">
