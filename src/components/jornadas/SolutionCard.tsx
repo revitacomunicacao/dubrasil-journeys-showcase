@@ -25,7 +25,7 @@ const SolutionCard = ({
   const isLeft = align === "left";
 
   return (
-    <section ref={ref} className="relative min-h-[600px] flex items-center overflow-hidden w-full">
+    <section ref={ref} className="relative min-h-screen flex items-center overflow-hidden w-full">
       <img
         src={image}
         alt={title}
@@ -43,7 +43,7 @@ const SolutionCard = ({
       <div className="relative z-10 w-full">
         <div className="mx-auto max-w-6xl px-6 py-16">
           <div className={["flex", isLeft ? "justify-start" : "justify-end"].join(" ")}>
-            <div className="w-full lg:w-1/2 lg:min-h-[600px] lg:flex lg:items-center">
+            <div className="w-full lg:w-1/2 lg:min-h-screen lg:flex lg:items-center">
               <div
                 className={[
                   "w-full",
