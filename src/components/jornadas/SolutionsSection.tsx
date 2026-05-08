@@ -2,7 +2,7 @@ import SolutionCard from "./SolutionCard";
 import solucaoPonto from "@/assets/controle de ponto.jpeg";
 import solucaoAgro from "@/assets/agro.jpeg";
 import solucaoAcesso from "@/assets/controle de acesso3.jpeg";
-import solucaoIdentificacao from "@/assets/identificacao corporativa.jpeg";
+import solucaoIdentificacao from "@/assets/identificacao corporativa.png";
 
 const solutions = [
   {
