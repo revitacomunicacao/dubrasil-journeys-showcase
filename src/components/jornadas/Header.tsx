@@ -14,14 +14,14 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-dubrasil-light/95 backdrop-blur-sm border-b border-dubrasil-navy/10">
       {" "}
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-3 max-lg:py-3 lg:py-4 flex items-center justify-between">
         {" "}
         <div className="flex flex-row gap-2 md:gap-10">
           {" "}
           <img
             src={logo}
             alt="DuBrasil Soluções"
-            className=""
+            className="h-9 w-auto max-lg:h-8 max-md:h-7"
           />{" "}
         </div>{" "}
         {/* Desktop Navigation */}{" "}
@@ -64,9 +64,9 @@ const Header = () => {
       </div>{" "}
       {/* Mobile Navigation */}{" "}
       {isMenuOpen && (
-        <nav className="md:hidden bg-dubrasil-light border-t border-dubrasil-navy/10 py-4">
+        <nav className="md:hidden bg-dubrasil-light border-t border-dubrasil-navy/10 py-4 max-h-[calc(100dvh-4.5rem)] overflow-y-auto">
           {" "}
-          <div className="container mx-auto px-4 flex flex-col gap-4">
+          <div className="container mx-auto px-4 flex flex-col gap-4 pb-2">
             <button
               onClick={() => scrollToSection("solucoes")}
               className="text-[#094385]/90 hover:text-[#094385] transition-colors font-medium"

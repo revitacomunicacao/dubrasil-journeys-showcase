@@ -8,14 +8,14 @@ const SectionHeading = ({ eyebrow, title, description }: SectionHeadingProps) =>
   const titleLines = title.split("\n");
 
   return (
-    <div className="text-center max-w-3xl mx-auto">
+    <div className="text-center max-w-3xl mx-auto max-lg:px-2">
       {eyebrow ? (
-        <span className="inline-block px-4 py-1.5 rounded-full bg-[#094385]/10 text-[#094385] text-xl font-medium mb-4">
+        <span className="inline-block px-4 py-1.5 rounded-full bg-[#094385]/10 text-[#094385] text-xl max-lg:text-base font-medium mb-4">
           {eyebrow}
         </span>
       ) : null}
 
-      <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground whitespace-pre-line">
+      <h2 className="font-heading text-3xl md:text-4xl max-lg:text-2xl max-lg:md:text-3xl font-bold text-foreground whitespace-pre-line">
         {titleLines.map((line, i) => (
           <span key={i}>
             {line}
@@ -25,7 +25,7 @@ const SectionHeading = ({ eyebrow, title, description }: SectionHeadingProps) =>
       </h2>
 
       {description ? (
-        <p className="mt-4 text-muted-foreground text-xl leading-relaxed">
+        <p className="mt-4 text-muted-foreground text-xl max-lg:text-base leading-relaxed">
           {description}
         </p>
       ) : null}

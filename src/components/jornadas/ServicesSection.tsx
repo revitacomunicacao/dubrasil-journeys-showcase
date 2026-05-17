@@ -82,22 +82,25 @@ const ServicesSection = () => {
     <section
       ref={ref}
       id="servicos"
-      className="relative py-20 lg:py-28 lg:min-h-[850px] lg:flex lg:items-center overflow-hidden text-primary-foreground scroll-mt-28"
+      className="relative py-20 max-lg:py-14 lg:py-28 lg:min-h-[850px] lg:flex lg:items-center overflow-hidden text-primary-foreground scroll-mt-28"
     >
       <img
         src={bgSuporte}
         alt=""
         aria-hidden="true"
         loading="lazy"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center max-lg:object-[center_30%] max-md:object-[center_25%]"
       />
-      <div className="absolute inset-0 bg-primary/65" />
-      <div className={`relative z-10 w-full container mx-auto px-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-            Serviços que colocam sua<br /> operação no controle
+      <div className="absolute inset-0 bg-primary/65 max-lg:bg-primary/75 max-md:bg-primary/80" />
+      <div className={`relative z-10 w-full container mx-auto px-6 max-lg:px-4 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+        <div className="text-center max-w-3xl mx-auto mb-16 max-lg:mb-10">
+          <h2 className="font-heading text-3xl md:text-4xl max-lg:text-2xl max-lg:md:text-3xl font-bold mb-4">
+            Serviços que colocam sua
+            <br className="max-lg:hidden" />
+            <span className="max-lg:inline lg:hidden"> </span>
+            operação no controle
           </h2>
-          <p className="text-primary-foreground/70 text-xl">
+          <p className="text-primary-foreground/70 text-xl max-lg:text-base">
             Serviços recorrentes e projetos sob medida para manter sua operação funcionando com precisão.
           </p>
         </div>
@@ -110,9 +113,9 @@ const ServicesSection = () => {
             {services.map((service, i) => (
               <CarouselItem
                 key={i}
-                className="pl-6 basis-[85%] sm:basis-1/2 lg:basis-1/3"
+                className="pl-6 basis-[88%] max-md:basis-[92%] sm:basis-1/2 lg:basis-1/3"
               >
-                <div className="bg-white/90 backdrop-blur-sm border border-white/30 rounded-xl p-6 hover:bg-white/80 transition-colors group shadow-sm h-full">
+                <div className="bg-white/90 backdrop-blur-sm border border-white/30 rounded-xl p-6 max-lg:p-5 hover:bg-white/80 transition-colors group shadow-sm h-full">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 rounded-lg bg-[#08284e] flex items-center justify-center shrink-0">
                       {service.icon.kind === "image" ? (
@@ -127,11 +130,11 @@ const ServicesSection = () => {
                         <service.icon.icon className="w-9 h-9 text-[#094385]" />
                       )}
                     </div>
-                    <h3 className="font-heading text-xl font-bold text-dubrasil-navy leading-tight">
+                    <h3 className="font-heading text-xl max-lg:text-lg font-bold text-dubrasil-navy leading-tight">
                       {service.title}
                     </h3>
                   </div>
-                  <p className="text-dubrasil-navy/70 text-xl leading-relaxed">
+                  <p className="text-dubrasil-navy/70 text-xl max-lg:text-base leading-relaxed">
                     {service.desc}
                   </p>
                 </div>

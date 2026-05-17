@@ -59,8 +59,8 @@ const Footer = () => {
                 : "opacity-0 translate-y-3",
             ].join(" ")}
           >
-            <img src={logo} alt="DuBrasil Serviços" width={219} height={60} decoding="async" />
-            <img src={qrcode} alt="DuBrasil Soluções" className="w-[40%] max-w-[180px] max-md:w-1/2" />
+            <img src={logo} alt="DuBrasil Serviços" width={219} height={60} decoding="async" className="max-lg:max-w-[180px] max-md:max-w-[160px] h-auto w-auto" />
+            <img src={qrcode} alt="DuBrasil Soluções" className="w-[40%] max-w-[180px] max-lg:max-w-[140px] max-md:w-1/2" />
           </div>
 
           {/* Contato */}

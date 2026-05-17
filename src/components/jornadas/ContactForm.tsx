@@ -62,10 +62,10 @@ const ContactForm = () => {
   return (
     <section
       id="contato"
-      className="relative flex min-h-[850px] flex-col overflow-hidden py-24 max-md:py-16"
+      className="relative flex min-h-[850px] max-lg:min-h-0 flex-col overflow-hidden py-24 max-lg:py-16 max-md:py-14"
     >
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat max-lg:bg-[center_35%] max-md:bg-[center_30%]"
         style={{ backgroundImage: `url(${bgMeshAlt})` }}
       />
       <div
@@ -76,19 +76,23 @@ const ContactForm = () => {
         }}
         aria-hidden="true"
       />
+      <div
+        className="absolute inset-0 hidden max-lg:block bg-black/25"
+        aria-hidden="true"
+      />
 
       <div className="relative z-10 flex w-full flex-1 flex-col justify-center">
         <div className="container mx-auto px-4">
-          <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
+          <div className="grid items-center gap-10 max-lg:gap-8 lg:grid-cols-12 lg:gap-12">
             {/* Textos */}
             <div className="lg:col-span-6 flex flex-col items-center justify-center lg:items-start">
-              <div className="w-full max-w-2xl text-left">
-                <h2 className="mt-2 text-4xl leading-[1.05] tracking-tight text-white max-md:text-balance md:text-5xl lg:text-6xl">
+              <div className="w-full max-w-2xl text-left max-lg:text-center lg:text-left">
+                <h2 className="mt-2 text-4xl leading-[1.05] tracking-tight text-white max-md:text-balance md:text-5xl lg:text-6xl max-lg:text-3xl max-lg:md:text-4xl">
                   <span className="font-light">Pronto para </span>
                   <span className="block font-extrabold">transformar</span>
                   <span className="font-light">seu atendimento?</span>
                 </h2>
-                <h3 className="mt-20 text-4xl leading-[1.05] tracking-tight text-white max-md:text-balance md:text-5xl lg:text-6xl">
+                <h3 className="mt-20 max-lg:mt-8 text-4xl leading-[1.05] tracking-tight text-white max-md:text-balance md:text-5xl lg:text-6xl max-lg:text-3xl max-lg:md:text-4xl">
                   <span className="block font-light">Vamos</span>
                   <span className="block font-extrabold">construir</span>
                   <span className="block font-light">essa história?</span>
