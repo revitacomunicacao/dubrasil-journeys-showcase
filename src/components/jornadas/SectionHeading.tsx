@@ -5,7 +5,7 @@ interface SectionHeadingProps {
 }
 
 const SectionHeading = ({ eyebrow, title, description }: SectionHeadingProps) => {
-  const titleLines = title.split("\n");
+  const titleLines = title.split(/\r?\n/);
 
   return (
     <div className="text-center max-w-3xl mx-auto max-lg:px-2">
