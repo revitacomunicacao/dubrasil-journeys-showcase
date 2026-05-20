@@ -10,6 +10,8 @@ interface SolutionCardProps {
   ctaText?: string;
   ctaLink?: string;
   align?: "left" | "right";
+  /** Posição horizontal da imagem de fundo em tablet/celular (abaixo de lg). */
+  mobileImageAlign?: "center" | "left" | "right";
 }
 
 const SolutionCard = ({
@@ -20,6 +22,7 @@ const SolutionCard = ({
   ctaText = "Quero saber mais",
   ctaLink = "#contato",
   align = "left",
+  mobileImageAlign = "center",
 }: SolutionCardProps) => {
   const { ref, isVisible } = useScrollAnimation(0.1);
   const isLeft = align === "left";
@@ -30,7 +33,14 @@ const SolutionCard = ({
         src={image}
         alt={title}
         loading="lazy"
-        className="absolute inset-0 w-full h-full object-cover object-center max-lg:object-[center_35%] max-md:object-[center_30%]"
+        className={[
+          "absolute inset-0 w-full h-full object-cover lg:object-center",
+          mobileImageAlign === "left"
+            ? "max-lg:object-left max-md:object-left"
+            : mobileImageAlign === "right"
+              ? "max-lg:object-[80%_center] max-md:object-[80%_center]"
+              : "max-lg:object-[center_35%] max-md:object-[center_30%]",
+        ].join(" ")}
       />
       {/* Overlay only on the content half (full width on mobile). */}
       <div

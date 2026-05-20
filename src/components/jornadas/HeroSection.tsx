@@ -15,10 +15,10 @@ const HeroSection = ({ content }: HeroSectionProps) => {
         alt="Equipe DuBrasil trabalhando com tecnologia"
         width={1920}
         height={1080}
-        className="absolute inset-0 w-full h-full object-cover object-center max-lg:object-[center_25%] max-md:object-[center_20%]"
+        className="absolute inset-0 w-full h-full object-cover lg:object-center max-lg:object-right max-md:object-right"
       />
       <div
-        className="absolute inset-0 max-lg:bg-black/45 max-md:bg-black/50"
+        className="absolute inset-0 lg:bg-transparent max-lg:bg-black/70 max-md:bg-black/75"
         aria-hidden="true"
       />
       <div className="relative z-10 container mx-auto px-6 max-lg:px-4 pt-28 md:pt-32 max-lg:pt-24 max-md:pt-20 pb-20 max-lg:pb-14">

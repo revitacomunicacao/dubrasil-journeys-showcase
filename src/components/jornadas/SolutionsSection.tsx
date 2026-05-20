@@ -19,6 +19,13 @@ const SolutionsSection = ({ solutions }: SolutionsSectionProps) => {
             ctaText={solution.button.texto}
             ctaLink={solution.button.link}
             align={i % 2 === 0 ? "right" : "left"}
+            mobileImageAlign={
+              solution.title === "Controle de Ponto"
+                ? "left"
+                : solution.title === "Identificação Corporativa"
+                  ? "right"
+                  : "center"
+            }
           />
         ))}
       </div>
